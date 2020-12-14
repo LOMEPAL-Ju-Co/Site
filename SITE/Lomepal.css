@@ -1,1 +1,160 @@
+html, body {
+  width:100%;
+	min-height:100%;
+	margin:0;
+  font-size: 12pt ;
+  font-family:facit , sans-serif;
+}
 
+header {
+  background-color: white;
+  position: fixed;
+  height: 115px;
+  width: 100%;
+
+}
+
+header h1 {
+  float: left;
+  width: 30%;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+header h1 img {
+  width:100%;
+}
+
+header h2 {
+  float: right;
+  margin-top: 60px;
+  margin-right: 110px;
+
+}
+header h2 a {
+  color: #95A5D5;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+a:hover {
+  color:#3E67AF;
+}
+
+article {
+  clear: both;
+  padding-top: 115px;
+}
+
+article img {
+  width: 50%;
+  float:left;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 5px;
+}
+
+/* rotation de l'image*/
+
+/* ESSAIE 1
+.article #music:hover {
+      animation: spin 3s infinite;
+      animation-timing-function: cubic-bezier(0.68, 0.150, 0.265, 1.55);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+
+*/
+
+/* ESSAIE 2
+.article #music:hover{
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite ;
+}
+
+@-webkit-keyframes spin {
+  0%{-webkit-: rotate (0deg);}
+  100%{-webkit-: rotate (360deg);}
+}
+@-moz-keyframes spin {
+  100%{-webkit-: rotate (360deg);}
+}
+
+@keyframes spin {
+  100%{-webkit-: rotate (360deg);}
+}
+
+*/
+
+article p {
+  float:right;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+  text-align: justify;
+  margin-bottom: -10px;
+
+}
+
+/*texte avec cd*/
+
+h3  {
+  clear: both;
+  color:#95A5D5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h3 .left {
+  padding-left: 80px;
+}
+
+h3 .right {
+padding-right: 80px;
+}
+
+/*disque qui lance la musique*/
+/*
+.disque {
+width: 30%;
+}
+*/
+.disque {
+        width: 20%;
+   }
+
+  .disque:hover {
+    cursor: pointer;
+        animation: spin 3s infinite;
+        animation-timing-function: cubic-bezier(0.68, 0.150, 0.265, 1.55);
+      }
+
+    @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+}
+
+footer {
+  background-color:#3E67AF;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 0;
+}
